@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class = "wrapper">
+    <% for (var i=0; i<users.length; i++){%>
+    <%= users[i]['name'] %>
+    <%= users[i]['age'] %>
+    <% } %>
+    <form method="POST" action="/users">
+      <label for "name">Name<label>
+      <input type="text" name="name"></input>
+      <label for "age">Age<label>
+      <input type="text" name="age"></input>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  </body>
+</html>
